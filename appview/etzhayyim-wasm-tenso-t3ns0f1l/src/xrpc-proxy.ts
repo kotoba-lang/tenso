@@ -1,3 +1,13 @@
+// SVELTEKIT-BACKEND-PRESERVED: moved out of svelte/ during the cljs migration; not wired.
+//
+// Origin: svelte/src/routes/xrpc/[...path]/+server.ts (SvelteKit server route).
+// It proxied POST /xrpc/[nsid] to AGENTGATEWAY_MCP_ROUTER_URL as a JSON-RPC
+// tools/call, unwrapping structuredContent from the MCP router's response.
+// It still imports from '@sveltejs/kit' and './$types' (SvelteKit-generated),
+// so it is NOT currently wired to anything — whether to revive it behind
+// this appview's own Worker (../app.ts) is an open product decision, not
+// made by this migration.
+
 import { json, type RequestEvent } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 
