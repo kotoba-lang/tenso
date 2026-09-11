@@ -52,7 +52,7 @@
           "APP_EMBED_URL" "APP_FRAMEWORK" "APP_NANOID" "APP_PERFORMER_TYPE"
           "APP_UI_TYPE" "AGENTGATEWAY_MCP_ROUTER_URL"]
    :xrpc? true
-   :relative-path "appview/etzhayyim-wasm-tenso-t3ns0f1l/cljs/src/tenso/app.cljs"})
+   :relative-path "appview/etzhayyim-wasm-tenso-t3ns0f1l/cljs/src/tenso/app.cljk"})
 
 (rf/reg-event-db
  :initialize-db

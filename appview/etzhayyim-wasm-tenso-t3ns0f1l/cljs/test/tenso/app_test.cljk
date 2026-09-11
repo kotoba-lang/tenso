@@ -20,7 +20,7 @@
            @(rf/subscribe [:routes])))
     (is (= 9 (count @(rf/subscribe [:vars]))))
     (is (true? @(rf/subscribe [:xrpc?])))
-    (is (= "appview/etzhayyim-wasm-tenso-t3ns0f1l/cljs/src/tenso/app.cljs"
+    (is (= "appview/etzhayyim-wasm-tenso-t3ns0f1l/cljs/src/tenso/app.cljk"
            @(rf/subscribe [:relative-path])))))
 
 (deftest vars-sub-carries-every-original-binding-name
